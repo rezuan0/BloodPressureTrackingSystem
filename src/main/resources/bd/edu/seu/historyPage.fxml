@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bd.edu.seu.HistoryPage">
+   <children>
+      <Label layoutX="234.0" layoutY="81.0" prefHeight="44.0" prefWidth="84.0" text="Hisrory" AnchorPane.leftAnchor="234.0" AnchorPane.rightAnchor="232.0">
+         <font>
+            <Font name="padmaa-Bold.1.1" size="24.0" />
+         </font></Label>
+      <TableView fx:id="tableView" layoutY="138.0" prefHeight="352.0" prefWidth="482.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="8.0">
+        <columns>
+          <TableColumn fx:id="dateColumn" prefWidth="89.0" text="Date" />
+            <TableColumn fx:id="timeColumn" prefWidth="74.0" text="Time" />
+            <TableColumn fx:id="weightColumn" prefWidth="97.0" text="Weight(Kg)" />
+            <TableColumn fx:id="systolicColumn" prefWidth="129.0" text="Systolic(mm HG)" />
+            <TableColumn fx:id="diastolicColumn" prefWidth="142.0" text="Diastolic(mm Hg)" />
+        </columns>
+      </TableView>
+      <Button layoutX="383.0" layoutY="491.0" mnemonicParsing="false" onAction="#nextPage" text="Next Page" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="383.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="69.0" layoutY="491.0" mnemonicParsing="false" onAction="#homePage" text="Previous Page" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="120.0" fitWidth="140.0" layoutX="11.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <image>
+            <Image url="@../../../image/240163601.jpg" />
+         </image></ImageView>
+   </children>
+</AnchorPane>
